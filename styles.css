@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding: 0;
+font-family: 'poppins',sans-serif;
+box-sizing: border-box;
+}
+body{
+  background-position: center;
+  background-size: cover;
+  /* background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+  color: rgb(2, 22, 40);
+  background-image: url(./abstract-background-of-four-colored-triangles.jpg);
+}
+h1{
+  text-align: center;
+  margin: 100px auto 50px;
+  transition: none;
+  color: rgb(240, 240, 240);
+  text-shadow: 2px 4px 4px rgba(46,91,173,0.8);
+  text-shadow: #400400 1px 2px  5px 10px;
+
+  
+}
+form{
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  height: 80px;
+  background: #434989;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+form input{
+  flex: 1;
+  height: 100%;
+  border: 0;
+  outline: 0;background: transparent;
+  columns: #fff;
+  font-size: 18px;
+  padding: 0 30px;
+  border-radius: 12px 0  0 12px;
+}
+
+#search-box {
+  color: white;
+}
+
+form button{
+  padding: 0 40px;
+  height: 100%;
+background: #429f9c;
+border: 0;
+  outline: 0;
+ border-top-right-radius: 8px;
+ border-bottom-right-radius: 8px;
+ cursor: pointer;
+ font-size: 18px;
+}
+::placeholder{
+  color: #fff;
+  font-size: 18px;
+}
+
+#show-more-btn{
+  padding: 10px 20px;
+  height: 100%;
+background:  #429f9c;
+border: 0;
+  outline: 0;
+ cursor: pointer;
+ font-size: 18px;
+ border-radius: 4px;
+ margin: 10px auto 100px;
+ display: block;
+ color:white;
+}
+
+#search-result{
+  width: 100%;
+  margin: 100PX AUTO 50PX;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  margin: 20px;
+
+}
+
+#search-result img{
+  width: 100%;
+  height:500px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: white solid 1.5px;
+
+}
+h1:hover{
+transition: all 1.5s;
+transform: translateY(-23px);
+}
+.picture{
+  display: flex;
+  flex-direction: row;
+
+}
+@media screen and (max-width: 490px){
+  #search-result img{
+    width: 100%;
+    height:150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    border: white solid 1.5px;
+}
+}
+
+@media screen and (min-width: 490px)and (max-width: 1401px) {
+  /* Your CSS styles for the specified width range go here */
+  #search-result img{
+    width: 100%;
+    height:250px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: white solid 1.5px;
+    object-position: center;
+
+}
+
+}
